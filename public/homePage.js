@@ -21,11 +21,11 @@ function updateRatesBoard() {
       if (response.success) {
           ratesBoard.clearTable();
           ratesBoard.fillTable(response.data);
-          setTimeout(updateRatesBoard, 60000);
       }
   })
 }
 updateRatesBoard()
+setTimeout(updateRatesBoard, 60000);
 
 
 const moneyManager = new MoneyManager();
