@@ -25,7 +25,7 @@ function updateRatesBoard() {
   })
 }
 updateRatesBoard()
-setTimeout(updateRatesBoard, 60000);
+setInterval(updateRatesBoard, 60000);
 
 
 const moneyManager = new MoneyManager();
